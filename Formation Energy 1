@@ -114,6 +114,8 @@ correlation_matrix_plot(data_1)
 cols_to_transform = ['spacegroup']
 data_2 = pd.get_dummies(data_1, columns = cols_to_transform )
 
+# This file does not have any missing values that need to be dealt with
+
 # Prepare the X and Y Datasets
 
 data_3 = data_2.copy()
@@ -271,3 +273,25 @@ model.fit(rescaledX, Y_train.ravel())
 rescaledtestX = scaler.transform(X_test)
 predictions = model.predict(rescaledtestX)
 print(mean_squared_error(Y_test.ravel(), predictions))
+
+
+# Test this on Kaggle Test Data - Formation Energy - GBM Model
+
+data_test = pd.read_csv("D:/Python/Datasets/Semiconductor_Data_Test.csv")
+type(data_test)
+data_test = data_test.drop(columns = ['id'])
+
+cols_to_transform = ['spacegroup']
+data_test_2 = pd.get_dummies(data_test, columns = cols_to_transform )
+
+data_test_3 = data_test_2.copy()
+X_Kaggle_test = data_test_3.copy().values
+
+validation_size = 0.20
+seed = 1001
+
+rescaledKaggletestX = scaler.transform(X_Kaggle_test)
+predictions = model.predict(rescaledKaggletestX)
+type(predictions)
+Formation_GBM_Predictions = pd.DataFrame(predictions)
+Formation_GBM_Predictions.to_csv("Formation Energy Predictions.csv")
