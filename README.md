@@ -3,6 +3,12 @@ Code for Kaggle Competition - Nomad 2018 Predicting Transparent Semiconductors
 
 This is the code for the Kaggle Competition.
 
+I've split the problem into 2 response variables:
+- Formation Energy
+- Bandgap Energy.
+
+My approach is to model each response separately and combine the results.
+
 I've tried:
 - Several Regression methods such as Linear Regression, Support Vector Machines and Elastic Net
 - Ensemble Methods (AdaBoost / Gradient Boosting Machines)
