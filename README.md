@@ -12,6 +12,5 @@ My approach is to model each response separately and combine the results.
 I've tried:
 - Several Regression methods such as Linear Regression, Support Vector Machines and Elastic Net
 - Ensemble Methods (AdaBoost / Gradient Boosting Machines)
-
-Next Steps:
-XGBoost (Boosted Decision Trees)
+- K-Nearest Neighbors
+- XGBoost for Bandgap Energy
