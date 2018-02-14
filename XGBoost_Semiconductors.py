@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Kaggle Transparent SemiConductors - XGBoost 
-Created on Sun Feb 11 18:46:55 2018
-
-@author: khark
 """
 
 #################################################################
