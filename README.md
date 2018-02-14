@@ -14,3 +14,4 @@ I've tried:
 - Ensemble Methods (AdaBoost / Gradient Boosting Machines)
 - K-Nearest Neighbors
 - XGBoost for Bandgap Energy
+- Support Vector Regression
