@@ -17,4 +17,4 @@ I've tried:
 - Support Vector Regression
 
 Future Explorations:
-- Run code in R
+- Write the code in R
