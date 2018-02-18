@@ -15,6 +15,3 @@ I've tried:
 - K-Nearest Neighbors
 - XGBoost for Bandgap Energy
 - Support Vector Regression
-
-Future Explorations:
-- Write the code in R
